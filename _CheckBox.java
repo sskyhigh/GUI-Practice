@@ -20,7 +20,6 @@ public class _CheckBox extends JFrame {
         add(BoldBox);
         add(ItalicBox);
 
-
         newFunction addFunction = new newFunction();
 
         HandleClass Handle = new HandleClass();
@@ -30,7 +29,7 @@ public class _CheckBox extends JFrame {
 
     }
 
-    private class newFunction implements ActionListener {
+    private static class newFunction implements ActionListener {
         public void actionPerformed(ActionEvent newEvent) {
             String text = "";
             text = String.format("%s", newEvent.getActionCommand());
