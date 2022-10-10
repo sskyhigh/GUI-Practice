@@ -1,10 +1,15 @@
 import javax.swing.*;
+import java.io.File;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        mouseEvents mouse = new mouseEvents();
-        mouse.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mouse.setSize(300, 200);
-        mouse.setVisible(true);
+        JFrame frame = new JFrame("Heading");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        _moreShapes chooseColor = new _moreShapes();
+        frame.setVisible(true);
+        frame.setSize(500, 400);
+        frame.add(chooseColor);
     }
 }
